@@ -1,0 +1,245 @@
+/* Pengaturan Dasar */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    color: white;
+
+    background: url("01 bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* Responsive Background */
+
+/* HP */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        background-position: center top;
+        background-size: auto 100vh;
+    }
+
+}
+
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
+
+
+/* Laptop / PC */
+@media (min-width: 1025px) {
+
+    body {
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
+
+
+
+/* Efek gelap + bintang */
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    radial-gradient(white 1px, transparent 1px),
+    rgba(0,0,0,0.35);
+
+    background-size: 50px 50px;
+
+    animation: twinkle 3s infinite ease-in-out;
+
+    z-index: -1;
+
+}
+
+
+@keyframes twinkle {
+
+    0%, 100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+
+/* Nama Bisnis */
+h1 {
+
+    color: #ffd1dc;
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Judul Price List */
+
+h2 {
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* Kotak teks */
+
+p {
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 15px;
+
+    margin: 15px auto;
+
+    width: 80%;
+
+    max-width: 300px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(5px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+}
+
+
+
+/* Tombol Price List & WhatsApp */
+
+a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #d16b86;
+
+    color: white;
+
+    padding: 18px 35px;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+
+    box-shadow:
+    0 4px 15px rgba(209,107,134,0.4);
+
+}
+
+
+
+/* Foto Info Pojok Bawah */
+
+.info-gambar {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    display: block;
+
+}
+
+
+
+.info-gambar img {
+
+    width: 80px;
+
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
+    transition: 0.3s;
+
+}
+
+
+
+.info-gambar img:hover {
+
+    transform: scale(1.15);
+
+}
+
+
+
+/* Tampilan HP */
+
+@media (max-width:600px){
+
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    a {
+
+        font-size: 16px;
+
+        padding: 15px 25px;
+
+    }
+
+
+}
